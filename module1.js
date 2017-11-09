@@ -33,4 +33,21 @@ module.exports.sumAll = function(arr){
 
 	return result;
 };
+
+//log some value from an array to a log.txt file inside app folder
+// arr topic/title
+var fs = require('fs');
+module.exports.logFile = function(arr){
+	fs.mkdir('app', function(err, data){
+		arr.forEach(function(n){
+			fs.appendFile('./app/log.txt', n+"/n/n", function(err){
+				if(err){
+					throw err;
+				}
+				console.log(n+" was appended!");
+			});
+		});
+	});
+};
+
 module.exports.getList = getList;
