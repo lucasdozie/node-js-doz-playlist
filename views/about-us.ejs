@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doz Playlist</title>
+</head>
+<body>
+	<header>
+		<div class="logo"><img src="/logo.jpg"></div>
+		<ul class="nav-menu">
+		<% menu.forEach(function(list){ %>
+			<li><%= list %></li>
+		<% }); %>
+		</ul>
+	</header>
+	<section>
+		<p>This site is owned by <%= author %></p>
+		<p>Now display list of users</p>
+		<table>
+			<thead><th>S/N</th><th>Name</th><th>gender</th><th>address</th><th>Telephone</th></thead>
+			<tbody>
+			<% 
+			var counter = 0;
+			persons.forEach(function(i){ 
+			counter++ %>
+				<tr>
+					<td><%= counter++ %></td>
+					<td><%= i['name'] %></td>
+					<td><%= i['gender'] %></td>
+					<td><%= i['address'] %></td>
+					<td><%= i['Telephone'] %></td>
+				</tr>
+			<% }); %>
+			</tbody>
+		</table>
+	</section>
+	<footer>
+		<div class="footer-wrapper">This is the freeking footer</div>
+	</footer>
+</body>
+</html>

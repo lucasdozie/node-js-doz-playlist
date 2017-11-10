@@ -1,0 +1,31 @@
+{
+  "name": "node-js-doz-playlist",
+  "version": "1.0.0",
+  "description": "My first real Nodejs app",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasdozie/node-js-doz-playlist.git"
+  },
+  "keywords": [
+    "developer",
+    "product",
+    "ecommerce"
+  ],
+  "author": "Lucasdozie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasdozie/node-js-doz-playlist/issues"
+  },
+  "homepage": "https://github.com/lucasdozie/node-js-doz-playlist#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}
